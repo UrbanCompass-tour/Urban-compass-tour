@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel and Tour Agency</title>
-    <link rel="stylesheet" href="./css travel.css">
+    <title>Urban Compass Tour LLC</title>
+    <link rel="stylesheet" href="./css/travel.css">
     <style>
+        /* Include the cleaned up and corrected CSS here (already in your original file) */
+    
+
 
 /* RESET & BASE STYLES */
 * {
@@ -376,31 +379,32 @@ a {
         font-size: 0.8rem;
     }
 } 
+        /* I will keep it minimal here for clarity. Assume it includes the previously posted correct styles. */
     </style>
 </head>
 <body>
     <!-- Header -->
-    <div class="header">
-        <header class="header-content">
+    <header class="header">
+        <div class="header-content">
             <a href="#" class="logo">
-                <img src="./logo.logo.com.png" alt="logoImage" class="logo-icon" width="100">
-                   Muhammad Hazik Riyan  <br> Urban Compass Tour <br> L.L.C
+                <img src="./logo.logo.com.png" alt="Urban Compass Logo" width="80">
+                <div>
+                    Muhammad Hazik Riyan<br>
+                    Urban Compass Tour LLC
+                </div>
             </a>
-
             <nav class="nav" id="navMenu">
                 <a href="#home" class="nav-links">Home</a>
                 <a href="#gallery" class="nav-links">Gallery</a>
                 <a href="#tours" class="nav-links">Tours</a>
                 <a href="#about" class="nav-links">About</a>
             </nav>
-
             <a href="#contact" class="contact-button">Contact Us</a>
-
             <button class="menu-button" id="menuToggle">
-                <img src="https://img.icons8.com/ios-filled/50/000000/menu--v1.png" alt="menu" class="menu-icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/menu--v1.png" alt="Menu" class="menu-icon">
             </button>
-        </header>
-    </div>
+        </div>
+    </header>
 
     <!-- Hero Section -->
     <section class="main-section" id="home">
@@ -408,7 +412,8 @@ a {
             <p class="section-label">Discover the World with Us</p>
             <h1 class="section-title">Your Journey Begins Here</h1>
             <p class="section-description">
-                Explore breathtaking destinations and unforgettable experiences with our expert travel guidance. Whether you're seeking adventure, relaxation, or cultural discovery, we make planning your perfect trip simple and stress-free.
+                Explore breathtaking destinations with our expert travel guidance.
+                Whether you seek adventure, relaxation, or cultural experiences, we make it easy.
             </p>
             <div class="button-group">
                 <a href="#start">Start Tour</a>
@@ -416,13 +421,53 @@ a {
             </div>
         </div>
         <div class="content-right">
-            <img src="./GqRKuOEW0AAPzDv.jpg" alt="sectionImage" class="section-image">
+            <img src="./GqRKuOEW0AAPzDv.jpg" alt="Travel destination" class="section-image">
         </div>
     </section>
 
-    <!-- Optional: More sections like Gallery, About, Contact... -->
+    <!-- Gallery Section -->
+    <section class="image-gallery" id="gallery">
+        <h2 class="gallery-title">Owner of Travel and Tour</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item animate">
+                <img src="./w.jpg" alt="Owner Photo 1">
+            </div>
+            <div class="gallery-item animate">
+                <img src="./Ha.jpg" alt="Owner Photo 2">
+            </div>
+            <div class="gallery-item animate">
+                <img src="./h.jpg" alt="Owner Photo 3">
+            </div>
+        </div>
+    </section>
 
-    <!-- JavaScript for Mobile Menu -->
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2 class="footer-logo">Travel & Tour</h2>
+                <p class="footer-description">
+                    Explore the world with guided tours and unforgettable experiences.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tours">Tours</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Contact Us</h3>
+                <p><strong>Email:</strong> urbancompasstour@gmail.com</p>
+                <p><strong>Phone:</strong> +971 564897862</p>
+                <p><strong>Address:</strong> Building 11, Office 14, Persia Cluster, Al Qusais, Dubai, UAE</p>
+                <p><strong>Office Hours:</strong> Mon–Fri (Open), Sat–Sun (Closed)</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28863.87349051235!2d55.382522699999996!3d25.271117399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c35d410acf3%3A0xe8aff9f4de65bf11!2sAl%20Qusais%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1747182384448!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+             <!-- Scripts -->
     <script>
         const menuToggle = document.getElementById('menuToggle');
         const navMenu = document.getElementById('navMenu');
@@ -430,90 +475,30 @@ a {
         menuToggle.addEventListener('click', () => {
             navMenu.classList.toggle('show');
         });
+
+        const animatedItems = document.querySelectorAll('.gallery-item');
+        const showOnScroll = () => {
+            animatedItems.forEach(item => {
+                const rect = item.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    item.classList.add('visible');
+                }
+            });
+        };
+        window.addEventListener('scroll', showOnScroll);
+        window.addEventListener('load', showOnScroll);
     </script>
-
-    <section class="image-gallery">
-    <h2 class="gallery-title">Owner of Travel and tour</h2>
-    <div class="gallery-grid">
-        <div class="gallery-item animate">
-            <img src="./w.jpg" alt="Paris">
         </div>
-        <div class="gallery-item animate">
-            <img src="./h.jpg" alt="Maldives">
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="https://maps.app.goo.gl/5qzTgzxYpbcyVxrd6">View Location</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p class="footer-copy">&copy; 2025 Urban Compass Tour LLC. All rights reserved.</p>
         </div>
-        <div class="gallery-item animate">
-            <img src="./Ha.jpg" alt="Tokyo">
-        </div>
-    </div>
-</section>
+    </footer>
 
-    <script>
-    // Scroll animation for .animate elements
-    const animatedItems = document.querySelectorAll('.gallery-item');
-
-    const showOnScroll = () => {
-        animatedItems.forEach(item => {
-            const rect = item.getBoundingClientRect();
-            if (rect.top < window.innerHeight - 100) {
-                item.classList.add('visible');
-            }
-        });
-    };
-
-    window.addEventListener('scroll', showOnScroll);
-    window.addEventListener('load', showOnScroll);
-</script>
-
-
- 
-    <footer class="site-footer">
-    <div class="footer-container">
-        <!-- About -->
-        <div class="footer-column">
-            <h2 class="footer-logo">Travel & Tour</h2>
-            <p class="footer-description">
-                Explore the world with expert-guided tours and personalized travel experiences. Your adventure starts here.
-            </p>
-        </div>
-
-        <!-- Links -->
-        <div class="footer-column">
-            <h3 class="footer-heading">Quick Links</h3>
-            <ul class="footer-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#tours">Tours</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-
-        <!-- Contact -->
-        <div class="footer-column">
-            <h3 class="footer-heading">Contact Us</h3>
-           <b>
-             <p>Email:urbancompasstour@gmail.com</p>
-            <p>Phone: +971 564897862</p>
-            <p>Address: Building no 11 office no 14 persia cluster al qasis city dubai UAE</p>
-            <p>Office Timing: Monday to Friday Open <br>Saturday to Sunday close </p>
-           </b>
-            <p><b>Loction :</b> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28863.873585640427!2d55.382523!3d25.271117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c35d410acf3%3A0xe8aff9f4de65bf11!2sAl%20Qusais%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1747173168814!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
-           
-            </p> 
-        </div>
-    </div>
-
-    <link rel="stylesheet" href="">
-    <div class="footer-bottom">
-        <div class="footer-social">
-                <a href="https://maps.app.goo.gl/5qzTgzxYpbcyVxrd6" class="menu-button" id="menuToggle">View Location</a>
-            <a href="https://maps.app.goo.gl/5qzTgzxYpbcyVxrd6" class="contact-button" >View Location</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-        </div>
-        <p class="footer-copy">&copy; 2025 Travel & Tour. All rights reserved.</p>
-    </div>
-</footer>
-
-
+   
 </body>
 </html>
