@@ -311,6 +311,39 @@ a {
     font-size: 0.9rem;
     margin-top: 1rem;
 }
+ .map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  margin-top: 1rem;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none !important; /* Ensures it hides unless .show is applied */
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.2rem;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
@@ -347,9 +380,15 @@ a {
         font-size: 2rem;
     }
 
-    .gallery-item {
-        max-width: 90%;
-    }
+   .gallery-grid {
+  padding: 0 1rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
 
     .footer-container {
         flex-direction: column;
@@ -367,6 +406,26 @@ a {
 }
 
 @media (max-width: 480px) {
+ 
+    
+  .main-section {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-description {
+    font-size: 0.95rem;
+  }
+
+  .button-group a {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+
     .section-description {
         font-size: 1rem;
     }
@@ -379,7 +438,11 @@ a {
         font-size: 0.8rem;
     }
 } 
-        /* I will keep it minimal here for clarity. Assume it includes the previously posted correct styles. */
+    
+   
+
+
+/* I will keep it minimal here for clarity. Assume it includes the previously posted correct styles. */
     </style>
 </head>
 <body>
@@ -465,7 +528,11 @@ a {
                 <p><strong>Phone:</strong> +971 564897862</p>
                 <p><strong>Address:</strong> Building 11, Office 14, Persia Cluster, Al Qusais, Dubai, UAE</p>
                 <p><strong>Office Hours:</strong> Mon–Fri (Open), Sat–Sun (Closed)</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28863.87349051235!2d55.382522699999996!3d25.271117399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c35d410acf3%3A0xe8aff9f4de65bf11!2sAl%20Qusais%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1747182384448!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-responsive">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28863.87349051235!2d55.382522699999996!3d25.271117399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c35d410acf3%3A0xe8aff9f4de65bf11!2sAl%20Qusais%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1747182384448!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+                
             </div>
              <!-- Scripts -->
     <script>
