@@ -1,5 +1,5 @@
 <html lang="en">
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Compass Tour LLC</title>
@@ -338,6 +338,7 @@ a {
 
  .map-responsive {
   position: relative;
+  
   overflow: hidden;
   padding-bottom: 56.25%; /* 16:9 ratio */
   height: 0;
@@ -601,7 +602,9 @@ a {
                 <p><strong>Address:</strong> Building 11, Office 14, Persia Cluster, Al Qusais, Dubai, UAE</p>
                 <p><strong>Office Hours:</strong> Mon–Fri (Open), Sat–Sun (Closed)</p>
                 <div class="map-responsive">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28863.87349051235!2d55.382522699999996!3d25.271117399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c35d410acf3%3A0xe8aff9f4de65bf11!2sAl%20Qusais%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1747182384448!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   <center>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28863.873830493478!2d55.36192306708753!3d25.271115970427807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c35d410acf3%3A0xe8aff9f4de65bf11!2sAl%20Qusais%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1747185695412!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </center>
 </div>
 
                 
